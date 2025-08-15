@@ -19,10 +19,11 @@
             ]
         },
         "dataSources": {
-            "<dataSourceAlias>": {
-                "uri": "<uri>",
+            "invoiceRemote": {
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+                "type": "OData",
                 "settings": {
-                    "localUri": "<localUri>"
+                    "odataVersion": "2.0"
                 }
             }
         }
@@ -41,7 +42,11 @@
             "desktop": true,
             "tablet": true,
             "phone": true
-        }
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
     },
     "sap.ui5": {
         "_version": "1.1.0",
@@ -69,19 +74,15 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "sap.ui.demo.walkthrough.i18n.i18n",
-                    "suppoertedLocales": [""],
+                    "supportedLocales": [""],
                     "fallbackLocale": ""
                 },
                 "uri": "<uriRelativeToManifest>"
             },
-            "Invoice":{
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "Invoices.json"
-            },
-            "": {
-                "dataSource": "<dataSourceAlias>",
-                "settings": {}
+            "invoice": {
+                "dataSource": "invoiceRemote"
             }
+         
         },
         "rootView": {
             "viewName": "sap.ui.demo.walkthrough.view.App",
