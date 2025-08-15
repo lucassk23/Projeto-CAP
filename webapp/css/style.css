@@ -1,17 +1,41 @@
-html[dir=ltr ] .myAppDemoWT .myCustomButton.sapMBtn {
+html[dir=ltr] .myAppDemoWT .myCustomButton.sapMBtn {
     margin-right: 0.125rem;
-} 
+}
 
-html[dir=rtl ] .myAppDemoWT .myCustomButton.sapMBtn {
+html[dir=rtl] .myAppDemoWT .myCustomButton.sapMBtn {
     margin-left: 0.125rem;
-} 
+}
 
-.myAppDemoWT .myCustomText{
+.myAppDemoWT .myCustomText {
     display: inline-block;
     font-weight: bold;
 }
-
 .myCustomPage{
-    background-color: lightblue;
-    justify-content: center;
+    background-color: #002244;
 }
+
+/* Estilo apenas do texto do título */
+.myCustomPage .sapMTitle {
+    color: #002244;
+    /* cor do texto */
+    font-weight: bold;
+}
+
+.myCustomPage .sapMBarTitleAlignAuto .sapMBarPH {
+    justify-content: center;
+    background-color: lightblue;
+    /* fundo azul claro */
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+    html.sap-desktop .sapMIBar.sapMFooter-CTX{
+    background-color: #0c4e8f;
+    /* cor de fundo azul escuro */
+}
+ .myDialog .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault:not(.sapMToggleBtnPressed):not(:hover){
+    background-color: black;
+ }
