@@ -14,10 +14,13 @@
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
         "tags": {
+            "keywords": [
+                "{{<keyword1>}}", "{{<keyword2>}}"
+            ]
         },
         "dataSources": {
             "invoiceRemote": {
-                "uri": "/V2/Northwind/Northwind.svc/",
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
                 "type": "OData",
                 "settings": {
                     "odataVersion": "2.0"
@@ -78,6 +81,10 @@
             },
             "invoice": {
                 "dataSource": "invoiceRemote"
+            },
+            "": {
+                "dataSource": "<dataSourceAlias>",
+                "settings": {}
             }
         },
         "rootView": {
@@ -91,37 +98,6 @@
           
         },
         "routing": {
-            "config": {
-                "routerClass": "sap.m.routing.Router",
-                "viewType": "XML",
-                "viewPath": "sap.ui.demo.walkthrough.view",
-                "controlId": "app",
-                "controlAggregation": "pages",
-                "async": true
-            },
-            "routes": [
-                {
-                    "pattern": "",
-                    "name": "overview",
-                    "target": "overview"
-                },
-                {
-                    "pattern": "detail/{invoicePath}",
-                    "name": "detail",
-                    "target": "detail"
-                }
-            ],
-            "targets": {
-                "overview": {
-                    "viewId": "overview",
-                    "viewName": "Overview"
-                },
-                "detail": {
-                    "viewId": "detail",
-                    "viewName": "Detail"
-                }
-
-            }
           
         },
         "extends": {
@@ -130,8 +106,8 @@
 			"extensions": {}
         },
         "contentDensities": {
-            "compact": true,
-            "cozy": true
+            "compact": false,
+            "cozy": false
         }
     },
 

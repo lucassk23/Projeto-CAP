@@ -1,7 +1,4 @@
-specVersion: "4.0"
+specVersion: '2.2'
 metadata:
-  name: sapui5-walktrough
+  name: sap-ui5-walkthrough
 type: application
-framework:
-  name: SAPUI5
-  version: "1.139.0"

@@ -1,10 +1,11 @@
 sap.ui.define([
-    "../localService/mockServer"
+    "../localService/mockserver"
 ], function (mockserver) {
     "use strict";
 
-    console.log("MockServer initialized!");
-    mockserver.init(); // inicia imediatamente, sem esperar nada
+    // initialise the mock server
+    mockserver.init();
 
-    // nada de chamar ComponentSupport aqui
-});
+    // initialise the embedded component o nthe HTML page
+    sap.ui.require(["sap/ui/core/ComponentSupport"])
+})
