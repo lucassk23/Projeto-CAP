@@ -15,7 +15,7 @@ sap.ui.define([
             });
             this.getView().setModel(oViewModel, "view")
         },
-        onFilterInvoices: function (oEvent) {
+        onFilterInvoices : function (oEvent) {
 
             // build filter array
             var aFilter = [];
@@ -30,10 +30,10 @@ sap.ui.define([
             oBinding.filter(aFilter);
         },
         onPress: function (oEvent) {
-            var oItem = oEvent.getSource();            
+            var oItem = oEvent.getSource()
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("detail",{
-                invoicePath:window.encodeURIComponent(oItem.getBindingContext("invoice").getPath().substr(1))
+            oRouter.navTo("detail", {
+                invoicePath: window.encodeURIComponent(oItem.getBindingContext("invoice").getPath().substr(1))
             });
         }
     })

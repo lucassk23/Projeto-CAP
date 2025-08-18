@@ -35,8 +35,6 @@ xmlns:mvc="sap.ui.core.mvc">
                 numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
                 type="Navigation"
                 press="onPress">
-                
-                
                 <firstStatus>
                     <ObjectStatus text="{
                         path: 'invoice>Status',
