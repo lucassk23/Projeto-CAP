@@ -13,11 +13,6 @@
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
-        "tags": {
-            "keywords": [
-                "{{<keyword1>}}", "{{<keyword2>}}"
-            ]
-        },
         "dataSources": {
             "invoiceRemote": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
@@ -51,11 +46,6 @@
     "sap.ui5": {
         "_version": "1.1.0",
         "resources": {
-            "js": [
-                {
-                    "uri": "<uri>"
-                }
-            ],
             "css": [
                 {
                     "uri": "css/style.css"
@@ -81,10 +71,6 @@
             },
             "invoice": {
                 "dataSource": "invoiceRemote"
-            },
-            "": {
-                "dataSource": "<dataSourceAlias>",
-                "settings": {}
             }
         },
         "rootView": {
