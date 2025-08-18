@@ -83,7 +83,7 @@
                             showMeasure: false
                                         }
                                 }"
-                    unit="{view>/currency}"
+                        unit="{view>/currency}"
                         state="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
                     />
                 </cells>

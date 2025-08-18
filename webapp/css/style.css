@@ -10,7 +10,8 @@ html[dir=rtl] .myAppDemoWT .myCustomButton.sapMBtn {
     display: inline-block;
     font-weight: bold;
 }
-.myCustomPage{
+
+.myCustomPage {
     background-color: #002244;
 }
 
@@ -32,18 +33,20 @@ html[dir=rtl] .myAppDemoWT .myCustomButton.sapMBtn {
 
 
 
-    html.sap-desktop .sapMIBar.sapMFooter-CTX{
+html.sap-desktop .sapMIBar.sapMFooter-CTX {
     background-color: #0c4e8f;
     /* cor de fundo azul escuro */
 }
- .myDialog .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault:not(.sapMToggleBtnPressed):not(:hover){
+
+.myDialog .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault:not(.sapMToggleBtnPressed):not(:hover) {
     background-color: black;
- }
+}
 
 
 .myAppDemoWTProductRating {
-	padding: 0.75rem;
+    padding: 0.75rem;
 }
+
 .myAppDemoWTProductRating .sapMRI {
-	vertical-align: initial;
+    vertical-align: initial;
 }
